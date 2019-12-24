@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+@font-face{
+    font-family: 'Montserrat-bold';
+    src:url('../fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face{
+    font-family: 'Montserrat-regular';
+    src:url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Montserrat-thin';
+    src:url('../fonts/Montserrat/Montserrat-Thin.ttf');
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    background: #232931;
+    background-image: url('../images/others/constellation.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 100vh 100vh;
+}
+
+/* HEADER */
+body>nav {
+    background-color: #1b2025;
+    height: 100%;
+}
+body>nav ul{
+    position: relative;
+    top: 20%;
+    list-style: none;
+}
+body>nav ul li{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+body>nav ul li svg{
+    color: #fff;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+body>nav ul li:hover  svg{
+    color: blueviolet;
+}
+.active>svg{
+    color: blueviolet;
+}
+
+/* END HEADER */
+
+/* HOME MAIN */
+.montserrat-thin{
+    font-family: 'Montserrat-thin';
+}
+.title{
+    font-size: 65px;
+    color: #888;
+    
+}
+.mp15p{
+    margin-top: 15%;
+}
+article{
+    text-align: center;
+}
+
+.networks{
+    display: grid;
+    width: 370px;
+    grid-template-columns: 120px 120px 120px;
+    grid-column-gap: 5px;
+    margin: 0 auto;
+    
+}
+.networks>div{
+    list-style: none;
+    border: 1px solid #000;
+    
+    font-family: 'Montserrat-regular';
+}
+.networks>div>span{
+   line-height: 2.0;
+}
+.networks>div>svg{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.networks>div:hover{
+    border-color: #ddd;
+    color:#ddd;
+    cursor: pointer;
+}
+/* END HOME MAIN */
